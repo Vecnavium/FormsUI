@@ -1,0 +1,5 @@
+name: FormsUI
+main: Vecnavium\FormsUI\FormsUI
+version: 1.0.0
+api: 4.0.0
+author: Vecnavium
