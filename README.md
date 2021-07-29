@@ -1,7 +1,7 @@
 [![Discord](https://img.shields.io/discord/837701868649709568.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://discord.gg/jWFB56RqUN) 
 
 ## FormsUI
-This was taken from FormAPI Github Repo and another author's repo and I have decided to create my own repo to implement forms, and this is for PM4 that I will be maintaining for the long run and would like to try improving it as it goes
+This was taken from FormAPI Github Repo and another author's repo and I have decided to create my own repo to implement forms, and this is for PM4 that I will be maintaining for the long run and would like to try improving it as it goes.
 
 
 # Features 
