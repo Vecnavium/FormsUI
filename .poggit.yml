@@ -1,0 +1,10 @@
+--- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/Vecnavium/FormsUI
+build-by-default: true
+branches:
+- master
+projects:
+  FormsUI:
+    path: ""
+    model: virion
+    type: library
+...
