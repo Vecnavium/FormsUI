@@ -4,7 +4,7 @@
 A PocketMine-MP Virion that allows you to create forms. A longterm and ongoing support for this virion and will be done at it's best to improve.
 
 # Pull Requests
-Pull Requests are welcomed. PRS must be related to changes that patch bugs or improves the virion itself.
+Pull Requests are welcomed. PRs must be related to changes that patch bugs or improves the virion itself.
 
 # BugReport
 
