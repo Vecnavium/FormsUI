@@ -1,9 +1,14 @@
-[![Discord](https://img.shields.io/discord/837701868649709568.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://discord.gg/jWFB56RqUN) 
+<p align="center">
+    <a href="https://github.com/Vecnavium/FormsUI"></a><br>
+    <b>A PocketMine-MP Virion that allows you to create forms. A longterm and ongoing support for this virion and will be done at it's best to improve. The project FormsUI has been taken from FormAPI to maintain and keeping it up to date for PocketMine API 4.0.0 and up.</b>
+</p>
 
-# FormsUI
-A PocketMine-MP Virion that allows you to create forms. A longterm and ongoing support for this virion and will be done at it's best to improve.
+<p align="center">
+    <img alt="GitHubrelease" src="https://img.shields.io/github/v/release/Vecnavium/FormsUI?label=release&sort=semver">
+      <img alt="Stars" src= "https://img.shields.io/github/stars/Vecnavium/FormsUI?style=for-the-badge">
+    <a href="https://discord.gg/6M9tGyWPjr"><img src="https://img.shields.io/discord/837701868649709568?label=discord&color=7289DA&logo=discord" alt="Discord" /></a>
+</p>
 
-The project FormsUI has been taken from FormAPI to maintain and keeping it up to date for PocketMine API 4.0.0 and up.
 
 # Pull Requests
 Pull Requests are welcomed. PRs must be related to changes that patch bugs or improves the virion itself.
