@@ -4,8 +4,6 @@ declare(strict_types = 1);
 
 namespace Vecnavium\FormsUI;
 
-use pocketmine\form\FormValidationException;
-
 class ModalForm extends Form {
 
     /** @var string */
@@ -21,12 +19,6 @@ class ModalForm extends Form {
         $this->data["content"] = $this->content;
         $this->data["button1"] = "";
         $this->data["button2"] = "";
-    }
-
-    public function processData(&$data) : void {
-        if(!is_bool($data)) {
-            throw new FormValidationException("Expected a boolean response, got " . gettype($data));
-        }
     }
 
     /**

@@ -4,38 +4,21 @@ declare(strict_types = 1);
 
 namespace Vecnavium\FormsUI;
 
-use pocketmine\form\FormValidationException;
-
-class SimpleForm extends Form {
-
-    const IMAGE_TYPE_PATH = 0;
-    const IMAGE_TYPE_URL = 1;
+class ModalForm extends Form {
 
     /** @var string */
     private $content = "";
-
-    private $labelMap = [];
 
     /**
      * @param callable|null $callable
      */
     public function __construct(?callable $callable) {
         parent::__construct($callable);
-        $this->data["type"] = "form";
+        $this->data["type"] = "modal";
         $this->data["title"] = "";
         $this->data["content"] = $this->content;
-        $this->data["buttons"] = [];
-    }
-
-    public function processData(&$data) : void {
-        if($data !== null && !is_int($data)) {
-            throw new FormValidationException("Expected an integer response, got " . gettype($data));
-        }
-        $count = count($this->data["buttons"]);
-        if($data >= $count || $data < 0) {
-            throw new FormValidationException("Button $data does not exist");
-        }
-        $data = $this->labelMap[$data] ?? null;
+        $this->data["button1"] = "";
+        $this->data["button2"] = "";
     }
 
     /**
@@ -68,18 +51,29 @@ class SimpleForm extends Form {
 
     /**
      * @param string $text
-     * @param int $imageType
-     * @param string $imagePath
-     * @param string $label
      */
-    public function addButton(string $text, int $imageType = -1, string $imagePath = "", ?string $label = null) : void {
-        $content = ["text" => $text];
-        if($imageType !== -1) {
-            $content["image"]["type"] = $imageType === 0 ? "path" : "url";
-            $content["image"]["data"] = $imagePath;
-        }
-        $this->data["buttons"][] = $content;
-        $this->labelMap[] = $label ?? count($this->labelMap);
+    public function setButton1(string $text) : void {
+        $this->data["button1"] = $text;
     }
 
+    /**
+     * @return string
+     */
+    public function getButton1() : string {
+        return $this->data["button1"];
+    }
+
+    /**
+     * @param string $text
+     */
+    public function setButton2(string $text) : void {
+        $this->data["button2"] = $text;
+    }
+
+    /**
+     * @return string
+     */
+    public function getButton2() : string {
+        return $this->data["button2"];
+    }
 }
