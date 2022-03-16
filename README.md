@@ -47,3 +47,7 @@ projects:
       - src: Vecnavium/FormsUI/libFormsUI
         version: ^2.0.0
 ```
+
+## Converting from FormAPI to FormsUI (As a plugin)
+
+It's nothing more than a simple drag and drop FormsUI and replace FormAPI that is in your libs directory. And if you properly remove FormAPI and dropped FormsUI into the libs directory everything should work as expected. No code is needed to be modified or changed
