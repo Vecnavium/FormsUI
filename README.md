@@ -24,3 +24,26 @@ Pull Requests are welcomed. PRs must be related to changes that patch bugs or im
 - Submit the issue and be patient for a response for a solution to your problem
  
 We will NOT assist you if you are using a spoon or modified PocketMine-MP version.
+
+## Converting from FormAPI to FormsUI (Virion)
+
+This is from FormAPI
+
+```yml
+projects:
+  YourProject:
+    libs:
+      - src: jojoe77777/FormAPI/libFormAPI
+        version: ^2.1.0
+```
+
+And you would need to change it to this to FormsUI
+
+
+```yml
+projects:
+  YourProject:
+    libs:
+      - src: Vecnavium/FormsUI/libFormsUI
+        version: ^2.0.0
+```
