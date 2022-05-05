@@ -44,8 +44,8 @@ And you would need to change it to this to FormsUI
 projects:
   YourProject:
     libs:
-      - src: Vecnavium/FormsUI/libFormsUI
-        version: ^2.0.0
+      - src: Vecnavium/FormsUI/FormsUI
+        version: ^1.1.2
 ```
 
 ## Converting from FormAPI to FormsUI (As a plugin)
